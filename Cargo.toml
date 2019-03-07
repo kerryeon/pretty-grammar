@@ -1,0 +1,11 @@
+[package]
+name = "pretty_grammar"
+version = "0.1.0"
+authors = ["Ho Kim <besqer996@gnu.ac.kr>"]
+edition = "2018"
+
+description = "A library that supports simple grammar correction of dynamic strings."
+license = "MIT"
+
+[dependencies]
+regex = "0.2"
