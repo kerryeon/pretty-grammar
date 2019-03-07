@@ -1,4 +1,5 @@
 # PrettyGrammar
+[![Version](https://docs.rs/pretty_grammar/badge.svg)](https://crates.io/crates/pretty_grammar)
 A library that supports simple grammar correction of dynamic strings.
 
 # Installation
