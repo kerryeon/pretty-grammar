@@ -5,6 +5,7 @@ authors = ["Ho Kim <besqer996@gnu.ac.kr>"]
 edition = "2018"
 
 description = "A library that supports simple grammar correction of dynamic strings."
+repository = "https://github.com/kerryeon/pretty-grammar"
 license = "MIT"
 
 [dependencies]
