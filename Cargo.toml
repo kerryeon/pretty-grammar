@@ -4,7 +4,7 @@ version = "0.1.1"
 authors = ["Ho Kim <besqer996@gnu.ac.kr>"]
 edition = "2018"
 
-documentation = "https://docs.rs/hangeul"
+documentation = "https://docs.rs/pretty_grammar"
 repository = "https://github.com/kerryeon/pretty-grammar"
 
 description = "A library that supports simple grammar correction of dynamic strings."
