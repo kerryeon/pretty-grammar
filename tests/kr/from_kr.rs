@@ -10,12 +10,17 @@
         Date: "3/7/2019"
 ------------------------------------------------------------ */
 
-use super::swap as _swap;
+use pretty_grammar::*;
 
-const FILTER: &'static str = "[a-zA-Z]";
-
-// May be incorrect.
-pub fn swap(msg: String, from: String, on: &'static str, off: &'static str) -> String {
-    _swap(msg, from, on, off, FILTER,
-         |_| true)
+#[test]
+fn kr() {
+    // From Korean
+    assert_eq!(
+        "철수는 영희를 좋아합니다.",
+        translate!(
+                "{name}<은> {obj}<를> 좋아합니다." with
+                lang: "kr",
+                name: "철수",
+                obj: "영희"
+        ));
 }

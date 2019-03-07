@@ -1,11 +1,19 @@
 [package]
 name = "pretty_grammar"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Ho Kim <besqer996@gnu.ac.kr>"]
 edition = "2018"
 
-description = "A library that supports simple grammar correction of dynamic strings."
+documentation = "https://docs.rs/hangeul"
 repository = "https://github.com/kerryeon/pretty-grammar"
+
+description = "A library that supports simple grammar correction of dynamic strings."
+keywords = [
+    "grammer",
+    "korean", "hangul", "hangeul",
+]
+readme = "README.md"
+
 license = "MIT"
 
 [dependencies]

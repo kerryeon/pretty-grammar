@@ -23,23 +23,3 @@ pub fn swap(msg: String, from: String, on: &'static str, off: &'static str) -> S
               _ => false,
           })
 }
-
-
-#[cfg(test)]
-mod tests {
-    pub use crate::*;
-
-    #[test]
-    fn kr() {
-        // From Korean
-        assert_eq!(
-            "900과 99를 더하면 999가 됩니다.",
-            translate!(
-                "{left}<와> {right}<를> 더하면 {answer}<가> 됩니다." with
-                lang: "kr",
-                left: "900",
-                right: "99",
-                answer: "999"
-        ));
-    }
-}

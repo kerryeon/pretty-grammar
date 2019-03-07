@@ -20,22 +20,3 @@ pub fn swap(msg: String, from: String, on: &'static str, off: &'static str) -> S
     _swap(msg, from, on, off, FILTER,
           |vec| (vec[0] - OFFSET) % STRIDE_JONGSEONG == 0)
 }
-
-
-#[cfg(test)]
-mod tests {
-    pub use crate::*;
-
-    #[test]
-    fn kr() {
-        // From Korean
-        assert_eq!(
-            "철수는 영희를 좋아합니다.",
-            translate!(
-                "{name}<은> {obj}<를> 좋아합니다." with
-                lang: "kr",
-                name: "철수",
-                obj: "영희"
-        ));
-    }
-}
